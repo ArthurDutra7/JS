@@ -67,11 +67,23 @@
     </ul></p>
     <p>A tag (toFixed (2) ), entre parênteses é a quantidade de casas adicionais no número, so funciona para números.</p>
     <p>Se quisermos que mostre em tabela de salário basta usarmos a tag - toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) - no lugar BRL botamos a sigla da moeda que queremos.</p>
+    <p>A ordem sempre será</p>
+    <p><strong>OPERADORES</strong> <br>
+        <ul>
+            <li>Aritméticos e Atribuição <br> (* - multiplicação) <br> (% - resto da divisão por inteiro, não terá resultado com vírgula. <br> <strong>Será apenas o resto que sobrar no final da conta</strong>) <br> (** - será número ao quadrado)</li>
+            <li>Relacionais <br> Sinais de < maior, > menor e = igual. Onde falam se são <strong>true ou false</strong></maior></li>
+            <li>Identidade <br> Para sabermos se os dois lados são números ou um lado nume. e o outro palavra. (Usamos - === )</li>
+            <li>Lógicos <br> ! - negação; && - conjunção; || - disjunção. <strong>(Sendo exatamente essa ORDEM que está)</strong></li>
+            <li>Ternário <br> Formado por (TESTE - ?TRUE  :FALSE) <br> EX: (18-2 da quanto) ?16 :10 -- vai dar 16, (? true).</li>
+        </ul>
+    </p>
+    <p> ** - sempre primeiro do que os outros, menos o que estiver dentro de ().</p>
+    <p>A ordem sempre será 1.matématica(Aritméticos), 2.sinais de maior e menor(Identidade), 3.o que eles são(Lógicos)</p>
 
     <!-- Assim faz o comentário no html -->
     <script>
         window.alert("Minha primeira mensagem de aviso.") 
-        var nome =prompt("Qual seu nome?") //variavel nome p/colocar aonde os nomes vão//
+        var nome =prompt("Qual seu nome?")
         alert("Seja bem vindo " + nome + '!' )
     </script>
     
