@@ -6,21 +6,74 @@
     <title>JavaScript</title>
     <style>
         body{
-            background-color: burlywood;
-            color: white;
+            background-color: rgb(202, 163, 108);
+            color: black;
+            font-size: 1.3em;
+            text-align: justify;
         }
     </style>
 </head>
 <body>
-    <h1>Oláa Mundo</h1>
+    <h1>Olá Mundo</h1>
     <h2>Iremos começar a práticar JS.</h2>
-
-    inicando JavaScript
+    <h4>Link para a segunda parte <a href="ex002.html">aqui.</a></h4>
     
+    <p>Inicando JavaScript</p>
+    <p>A tag ( = ) sempre será para RECEBER </p>
+    <p> Tag (NULL) p/anular algo.</p>
+    <p>Palavra (VAR ou LET) p/criar Identificadores (um local p/armazenar), sempre numerar eles.</p>
+    <p>Podem também ser colocadas quantidades a ser recebidas <br>EX:</p>
+    <p>
+        var n1 = 5 
+        <br>var n2 = 8.5
+        <br>var n3 = 15
+    </p>
+    <p>Podemos também criar Identificadores maiores usando em vez de números, usando letras. <br> EX: </p>
+    <p>
+        var s1 = "JavaScript" 
+        <br>var s2 = 'Curso em Vídeo'
+        <br>var s3 = `Guanabra`
+    </p>
+    <p>Onde o tipo de aspas usado faz diferença</p>
+    <p>
+        <ul>
+            <li>Não podem começar por números.</li>
+            <li>Podem usar acentos.</li>
+            <li>Não podem ter espaços.</li>
+            <li>Não podem ser palavras que fazem parte do sistema</li>
+            <li>Podem começar com Letras, $ ou _.</li>
+        </ul>
+    </p>
+    <p>Temos diferentes tipos de Identificadores, sendo eles. <br>
+    <ul>
+        <li><strong>Number</strong>, apenas dados de números.</li>
+        <li><strong>String</strong>, palavras em geral, mas também podendo ser CPF, Telefone, Número da identidade, etc.</li>
+        <li><strong>Boolean</strong>, true ou false.</li>
+    </ul></p>
+    <p>Typrof - p/saber a funçao daquele Identificador</p>
+    <p>A tag (PROMPT), recebe sempre o String. Se for um número tem q ser mudado manualmente.</p>
+    <p>Usando a conversão da tag (Number.parseInt - p/número inteiro) e (Number.parseFloat - p/número com vírgula)</p>
+    <p>Mas também podemos usar só a tag (Number)</p>
+    <p>E p/mudarmos de Número para String, usamos a tag (String(n)) ou (n.toString(  ))</p>
+    <p>(Number + Number) = Adição. <br>
+    (String + String)  = Concatenação.</p>
+    <p>Para conectarmos a frase com o Identificador usado ele não pode estar dentro dos parenteses juntos.</p>
+    <p>Podemos usar a tag ( ${s} para facilitar a escrita).</p>
+    <p>Temos outras formas da Strings. <br>
+    <ul>
+        <li><strong>s.lenght</strong> - para saber quantos caracteres ela tem.</li>
+        <li><strong>s.toUpperCase()</strong> - tudo vai para letras Maiúsculas.</li>
+        <li><strong>s.toLowerCase()</strong> - tudo para letras minúsculas.</li>
+    </ul></p>
+    <p>A tag (toFixed (2) ), entre parênteses é a quantidade de casas adicionais no número, so funciona para números.</p>
+    <p>Se quisermos que mostre em tabela de salário basta usarmos a tag - toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) - no lugar BRL botamos a sigla da moeda que queremos.</p>
+
+    <!-- Assim faz o comentário no html -->
     <script>
-        window.alert("Minha primeira mensagem.")
-        confirm("Está gostando?")
-        prompt("Qual seu nome?")
+        window.alert("Minha primeira mensagem de aviso.") 
+        var nome =prompt("Qual seu nome?") //variavel nome p/colocar aonde os nomes vão//
+        alert("Seja bem vindo " + nome + '!' )
     </script>
+    
 </body>
 </html>
