@@ -11,6 +11,9 @@
             font-size: 1.3em;
             text-align: justify;
         }
+        li{
+            padding: 7px;
+        }
     </style>
 </head>
 <body>
@@ -79,12 +82,24 @@
     </p>
     <p> ** - sempre primeiro do que os outros, menos o que estiver dentro de ().</p>
     <p>A ordem sempre será 1.matématica(Aritméticos), 2.sinais de maior e menor(Identidade), 3.o que eles são(Lógicos)</p>
+    <h3>DOM - Árvore do Site</h3>
+    <p><strong>SELECIONADO</strong></p>
+    <ul>
+        
+        <li>Por Marca (Tag - getEl..TagName) - innerHTML > pega a escrita com todas as classes. <br> Já o innertext > pega só a escrita sem as classes.</li>
+        <li>Por ID (Tag - getEl..ByID) - Mudado pela tag Id no html.</li>
+        <li>Por Nome (Tag - getElement<strong>s</strong>..ByName) - Mudado pela tag name no html.</li>
+        <li>Por Classe (Tag - getEl..ByClassName) - Pode ser mudado por uma tag class no html.</li>
+        <li>Por Seletor (Tag - querySelector ou querySelectorAll) - (Melhor opção a ser usada)</li>
+        
+    </ul>
 
     <!-- Assim faz o comentário no html -->
     <script>
+        /*
         window.alert("Minha primeira mensagem de aviso.") 
         var nome =prompt("Qual seu nome?")
-        alert("Seja bem vindo " + nome + '!' )
+        alert("Seja bem vindo " + nome + '!' ) */
     </script>
     
 </body>
