@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+<body>
+    <h1>Link para a part. 6 <a href="ex009.html">aqui</a></h1>
+    <h1>Sistema de Nacionalidade</h1>
+    Eu moro em <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="resu">
+
+    </div>
+
+    <script>
+        function verificar() {
+            var pais = document.getElementById('pais')
+            var resu = document.getElementById('resu')
+            var mora = String(pais.value)
+            
+            resu.innerHTML = `<p>Vc mora em ${mora}.</p>`
+
+            if(mora != 'Brasil') {
+                resu.innerHTML = `<p>Vc é Estrangeiro</p>`
+            }
+            else {
+                resu.innerHTML = `<p>Vc é Brasileiro</p>`
+            }
+        }
+    </script>
+</body>
+</html>
