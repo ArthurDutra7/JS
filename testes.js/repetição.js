@@ -1,15 +1,5 @@
-
-/* Laço de Repetição
-var c = 1
-while (c <= 10){
-    console.log(`Passo ${c}`)
-    c++
+console.log('Vai começar..')
+for (c = 1; c <= 4; c++){
+    console.log(c)
 }
-*/
-
-//Executa o (DO) e depois faz o laço de repetição ou não
-var c = 1
-do{
-    console.log(`Passo ${c}`)
-    c++
-} while (c <= 10)
+console.log('Fim!')
