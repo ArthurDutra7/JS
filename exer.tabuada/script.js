@@ -13,6 +13,5 @@ function tabuada(){
             item.value = `tab${c}`
             tab.appendChild(item)
         }
-
     }
 }
