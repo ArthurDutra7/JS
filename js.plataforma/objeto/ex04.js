@@ -1,40 +1,28 @@
-// Class - define o que deve ser
-class pessoa{
+ class pessoa{
     nome;
     idade;
+    
+    constructor(nome,idade,){
+        this.nome = nome
+        this.idade = idade
+    }
 
     descreva() {
-        console.log(`Meu nome é ${this.nome} e tenho ${this.idade} anos.`)
+        console.log(`Meu nome é ${this.nome} e tenho ${this.idade} anos e trabalho como ${this.profissao}`)
     }
 }
 
-// Instancia - o que ele pode ser, podendo ser mais de um MAS seguem o mesmo padrão
-const arthur = new pessoa()
-arthur.nome = 'Arthur Souza'
-arthur.idade = 18
-
-const pedro = new pessoa()
-pedro.nome = 'Pedro'
-pedro.idade = 22
-
-arthur.descreva()
-pedro.descreva()
-
-
-/*
-const dados = {
-    nome:'Arthur souza',
-    idade:18,
-    trabalho:'Programador',
-
-    descreva: function(){
-        console.log(`Meu nome é ${this.nome} e tenho ${this.idade} anos, e trabalho como ${this.trabalho}`)
+function comparar(p1,p2){
+    if(p1.idade > p2.idade){
+        console.log(`${p1.nome} é mais velho(a) que ${p2.nome}`)
+    } else if(p2.idade > p1.idade){
+        console.log(`${p2.nome} é mais velho(a) que ${p1.nome}`)
+    } else {
+        console.log(`${p1.nome} tem a mesma idade que ${p2.nome}`)
     }
 }
-*/
 
-// (dados['nome']) - PODENDO ESCOLHER DINAMICAMENTE
+const arthur = new pessoa('Arthur',22)
+const pedro = new pessoa('Pedro',22)
 
-// dados.altura=1.71; ADICIONAR POR FORA
-
-// delete dados.idade - PARA REMOVER
+comparar(arthur,pedro)
